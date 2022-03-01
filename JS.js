@@ -22,7 +22,7 @@ function showItems(arr) {
                 <a target='blank' href='${arr[i]}'>
                     ${arr[i]}
                 </a>
-                <img src="white_1x/outline_delete_white_24dp.png" alt="-" id="img${i}">
+                <img src="/outline_delete_white_24dp.png" alt="-" id="img${i}">
             </li>
         `
     }
@@ -75,6 +75,6 @@ undoBtn.addEventListener("click",function() {
     showItems(bookmarks);
 })
 
-bookmarks = [];
-localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
-showItems(bookmarks);
+// bookmarks = [];
+// localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+// showItems(bookmarks);
