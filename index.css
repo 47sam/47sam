@@ -1,0 +1,104 @@
+@import "compass/css3";
+body{
+    margin: 0px;
+    padding: 10px 10px;
+    min-width: 400px;
+    background:#EEF2F7;
+}
+button {
+    color: white;
+    background:#04AA6D;
+    border: 3px solid rgba(0, 0, 3, 0.315);
+    border-radius: 0px 5px 0px 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+button:hover {
+    background:rgb(0,0,3);
+    color: #04AA6D;
+    border: 3px solid #343041;
+    cursor: pointer;
+}
+button:active{
+    border: 3px solid #04AA6D;
+    cursor: progress;
+}
+#undo-btn{
+    color:green;
+    background: white;
+    border: 3px solid ;
+    float:right;
+}
+#undo-btn:hover{
+    color: rgb(231, 224, 224)  ;
+    background: rgb(0,0,3);
+    border:3px solid rgb(0,0,3);
+}
+#undo-btn:active{
+    border:3px solid red;
+}
+input{
+    width: 100%;
+    height: 40px;
+    background: rgb(0,0,3);
+    border: 2px solid rgb(0,0,3);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom:5px;
+    caret-color: rgb(6, 247, 6);
+    color: white;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+}
+li{
+    background: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 10px 10px 5px;
+    box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12)
+            ;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+li:hover{
+    background: rgba(0, 0, 3, 0.932);
+}
+a{
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #158059;
+}
+a:hover{
+    color: #07f59ee0;
+    
+}
+img{
+    background:rgba(224, 8, 8, 0.836);
+    border-radius:0% 20% 20% 0%;
+    margin-right:-5px;
+}
+img:hover{
+    transform: scale(1.3);
+    background:red;
+    border-radius:0% 10% 10% 0%;
+    cursor:pointer;
+}
+@keyframes vibrate {
+    from { transform: rotate(1deg) translateX(1px); }
+    to { transform: rotate(-1deg) translateX(-1px); }
+  }
+img:active{
+    animation:vibrate 0.1s infinite;
+    cursor:progress;
+    
+}
